@@ -1,0 +1,30 @@
+
+
+<%- include('partials/head.ejs') %>
+<link rel="stylesheet" href="css/style.css">
+<body>
+     <div class="container" >
+          <h1>	
+               &#10084; <%-title  %> </h1>
+          <section>
+               <form action="/register/add" method="post">
+                    <label for="">Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" required>
+                    <br>
+                    <label for="">Idade</label>
+                    <input type="number" name="age" placeholder="Digite sua idade" required>
+                    <br>
+                    <label for="">E-mail</label>
+                    <input type="text" name="email" placeholder="Digite seu e-mail"required>
+                    <br>
+                    <label for="">Senha</label>
+                    <input type="text" name="password" placeholder="Digite sua senha"required>
+                    <br>
+                    <label for=""></label>
+                    <input type="submit" value="Login" ></input
+               </form>
+          </section>
+     </div>
+</body>
+
+</html>
