@@ -1,19 +1,11 @@
 const router = require('express').Router();
 const CustomersController = require('../controllers/customers');
+const indexController = require('../controllers/index');
 // console.log(CustomersController)
 // rotas 
-router.get('/', (req, res) => {
-     res.render('index',{
-          title:"Pagina de inicio"
-     })
-})
-router.get('/register', (req, res) => {
-     res.render('register',{
-          title:"Teste"
-     })
-})
+router.get('/',indexController.index); 
 
-
+router.get('/register',CustomersController.index )
 
 
 router.post('/register/add', CustomersController.add)

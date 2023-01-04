@@ -1,5 +1,6 @@
 *{
      margin: 0;
+     box-sizing: border-box;
 }
 body{
      align-items: center;
@@ -14,11 +15,7 @@ body{
      margin:10% auto  ;
      text-align: center;
 }
-h1{
-     font-size: 3rem;
-     color: red;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+
 form{
      flex-direction: column;
      margin: 10px auto;
