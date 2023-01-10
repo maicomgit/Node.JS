@@ -1,10 +1,12 @@
 const mongoose = require('mongoose');
 
 const  schema = new mongoose.Schema({
-     name:String,
+     name:String ,
      age:Number,
      email:String,
      password:String,
+     celular:Number,
+     principal:String,
 
 });
 

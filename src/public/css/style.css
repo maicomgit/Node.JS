@@ -46,3 +46,7 @@ input[type="submit"]{
           overflow: hidden;
      }
 }
+
+th{
+     background-color: #A7A7A7;
+}

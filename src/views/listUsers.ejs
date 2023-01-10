@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<%- include ('partials/head.ejs') %> 
+<link rel="stylesheet" href="css/listaClientes.css">
+<body>
+     <h1><%-title%> </h1>
+     
+<table>
+     <tr>
+          <th>
+               Nome
+          </th>
+          <th>
+               Email
+          </th>
+          <th>
+               Idade
+          </th>
+          <th>
+               Número
+          </th>
+          <th>
+               Principal
+          </th>
+     </tr>
+     <% users.forEach((user)=>{ %>
+          <tr>
+               <td>
+                    <%-user.name %> 
+               </td>
+               <td>
+                    <%-user.email %> 
+               </td>
+               <td>
+                    <%-user.age %> 
+               </td>
+               <td>
+                    <%-user.celular %> 
+               </td>
+               <td>
+                    <%-user.principal %> 
+               </td>
+          </tr>
+     <% })%>          
+</table>
+<%- include ('partials/header.ejs') %> 
+<%- include ('partials/footer.ejs') %> 
+
+</body>
+</html>
