@@ -8,11 +8,11 @@ body{
      height: 100vh;
 }
 th{
-     width: 30%;
      background-color: aliceblue;
      border: solid 1px rgb(32, 28, 28);
 }
 td{
+
      text-align: center;
      border-bottom: solid 1px rgb(32, 28, 28);
 }
@@ -22,4 +22,31 @@ table{
 }
 .none{
      display: none;
+}
+.principal{
+     display: flex;
+     justify-content: space-around;
+
+}
+a{
+     text-decoration: none;
+     color: black;
+}
+tr:hover{
+     background-color: rgb(205, 206, 204);
+
+}
+.listClientA{
+     background-color: transparent;
+     color: rgb(65, 255, 7);
+     border-radius: 5px;
+     padding: 0.2rem;
+     border: solid 1px rgb(65, 255, 7);
+
+}
+.listClientA:hover{
+     transition: 1s ease;
+     background-color: rgb(212, 241, 203);
+     box-shadow: 1px 1px 5px ;
+     
 }

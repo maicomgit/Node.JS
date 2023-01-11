@@ -37,9 +37,14 @@
                <td>
                     <%-user.celular %> 
                </td>
-               <td>
+               <td  >
                     <%-user.principal %> 
                </td>
+               <td class="principal" >
+                    <a href="/edit?id=<%-user._id %> ">Editar</a>
+                    <a href="#">&#10008;</a>
+               </td>
+
           </tr>
      <% })%>          
 </table>
