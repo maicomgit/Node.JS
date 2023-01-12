@@ -14,14 +14,14 @@ router.post('/register/add', CustomersController.add)
 //Rotas Para Listar os Clientes 
 router.get('/list', CustomersController.list)
 
-
-
 // Rotas para Fazer a edição do item
 
 router.get('/edit',CustomersController.formEdit)
 router.post('/edit/:id',CustomersController.edit)
 // -------------------------------
+// Rotas para fazer a remoção
 
+router.get('/remove/:id',CustomersController.remove)
 
 
 //404 error ('pagina nao encontrada')

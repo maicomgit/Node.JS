@@ -81,10 +81,24 @@ const {
      })
 }
 
+// remover
+
+async function remove(req, res) {
+     const {id} = req.params
+
+     const remove = await  CustomersModel.deleteOne({_id: id})
+     if (remove.ok) {
+          res.redirect('/list')
+     }
+}
+
+
+
 module.exports = {
      add,
      index,
      list,
      formEdit,
      edit,
+     remove,
 }
