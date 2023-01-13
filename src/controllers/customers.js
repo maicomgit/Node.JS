@@ -1,12 +1,12 @@
 const CustomersModel = require('../models/customers')
 const {crypto} = require('../utils/password');
 
-const defaultTitle = 'cadastro de clientes'
+const defaultTitle = 'Cadastro de Clientes'
 
 
 function index (req, res) 
      {res.render('register',{
-          title:"Teste"
+          title: defaultTitle,
      })
 }
 async function add(req, res){

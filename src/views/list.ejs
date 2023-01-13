@@ -1,28 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<%- include ('partials/head.ejs') %> 
+
 <link rel="stylesheet" href="css/listaClientes.css">
 <body>
+     <%- include ('partials/header.ejs') %> 
      <h1><%-title%> </h1>
-     
-<table>
-     <tr>
-          <th>
-               Nome
-          </th>
-          <th>
-               Email
-          </th>
-          <th>
-               Idade
-          </th>
-          <th>
-               Número
-          </th>
-          <th>
-               Principal
-          </th>
-     </tr>
+     <% if(users.length > 0) { %> 
+          <table>
+          <tr>
+               <th>
+                    Nome
+               </th>
+               <th>
+                    Email
+               </th>
+               <th>
+                    Idade
+               </th>
+               <th>
+                    Número
+               </th>
+               <th>
+                    Principal
+               </th>
+          </tr>
      <% users.forEach((user)=>{ %>
           <tr>
                <td>
@@ -41,14 +42,20 @@
                     <%-user.principal %> 
                </td>
                <td class="principal" >
-                    <a href="/edit?id=<%-user._id %> ">Editar</a>
+                    <a class="editarAncora" href="/edit?id=<%-user._id %> ">Editar</a>
                     <a class="a" href="/remove/<%-user._id %> ">&#10008;</a>
                </td>
-
           </tr>
      <% })%>          
 </table>
-<%- include ('partials/header.ejs') %> 
+<% } else{ %>  
+     <h1>Sem clientes cadastrados </h1>
+     <% } %>  
+
+
+
+
+
 <%- include ('partials/footer.ejs') %> 
 
 </body>
